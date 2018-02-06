@@ -3,7 +3,7 @@ var app = new Vue({
   el: '#app',
   data: {
     status: defaultStatus,
-    lastMenstruationStr: '12/09/2017',
+    lastMenstruationStr: '',
     statusMsg: {
       areYouSure: 'você tem certeza que tá grávida?',
       alreadyBorn: 'parabéns! seu baby já nasceu!',
