@@ -7,4 +7,4 @@ Check my public projects on **[GitHub](https://github.com/bolzon)**.
 
 Or go to my **[Linkedin profile](https://linkedin.com/in/alexandrebolzon)** if you want to get in touch.
 
-you're welcome | seja bem-vindo | добро пожаловать
+You're welcome! Seja bem-vindo! Добро пожаловать!
