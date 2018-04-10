@@ -1,7 +1,7 @@
 
 I'm Bolzon and work with mixed software solutions since 2006.
 
-Started with **C/C++** solutiond for desktop and embedded.
+Started with **C/C++** solutions for desktop and embedded.
 
 Now focusing in web back-end projects using **node.js** and **.net core**.
 
