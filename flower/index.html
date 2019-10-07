@@ -2,52 +2,13 @@
 
 <head>
 	<title>GT Cloud</title>
-	<style type="text/css">
-		circle.node {
-			cursor: pointer;
-			stroke: #000;
-			stroke-width: .5px;
-		}
-
-		circle.node.directory {
-			stroke: #000;
-			stroke-width: 2px;
-		}
-
-		circle.node.collapsed {
-			stroke: #555;
-		}
-
-		.nodetext {
-			fill: #252929;
-			font-size: 12px;
-			font-family: sans-serif;
-			text-shadow: 0 0 0.2em white;
-		}
-
-		circle,
-		circle * {
-			stroke: none !important;
-		}
-
-		circle.node:hover {
-			cursor: pointer;
-			stroke: #008 !important;
-			stroke-width: 2px !important;
-		}
-
-		line.link {
-			fill: none;
-			stroke: #9ecae1;
-			stroke-width: 1.5px;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 	<h1>GT Cloud</h1>
 	<p>Exemplo de gráfico de competências.</p>
-	<p>Puxe os círculos e arraste :)</p>
+	<p>Arraste os círculos e clique nos parent nodes :)</p>
 	<div id="visualization"></div>
 	<script type="text/javascript" src="js/d3.js"></script>
 	<script type="text/javascript" src="js/d3.geom.js"></script>
