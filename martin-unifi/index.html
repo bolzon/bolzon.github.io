@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="author" content="Alexandre Bolzon"/>
+    <title><unifi txt="WelcomePage.Title"/></title>
+    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/vegas.min.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vegas.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <h1>Martin Holandesa</h1>
+    </header>
+    <div class="container-fluid" id="content">
+      <section id="we-are-open">
+        <h2>Aberto o ano todo no centro de Holambra!</h2>
+      </section>
+      <section id="welcome">
+        <h2><span class="welcome">Bem-vindos, curta nossa página no</span>
+          <a id="fb" href="https://www.facebook.com/martinholandesa/">facebook</a></h2>
+      </section>
+      <section id="doces-tipicos" class="pratos">
+        <h2>Doces, Tortas e<br/>Bolachas Típicas</h2>
+      </section>
+      <section id="pratos-tipicos" class="pratos">
+        <h2>Pratos Típicos<br/>e Pannekoek</h2>
+      </section>
+      <section id="pratos-executivos" class="pratos">
+        <h2>Pratos Executivos</h2>
+      </section>
+      <section id="happy-martin" class="pratos">
+        <h2>Happy na Martin</h2>
+      </section>
+      <section id="quarta-country" class="pratos">
+        <h2>Quarta Country</h2>
+      </section>
+      <section id="cafes-especiais" class="pratos">
+        <h2>Cafés Especiais</h2>
+      </section>
+      <unifi if="auth_password">
+        <section id="login">
+          <div class="login">
+            <form class="form" name="input" id="submit-form"
+              method="post" action="login" role="form">
+              <input type="hidden" name="page_error" value="index.html"/>
+              <unifi if="has_error">
+                <label><unifi error="error"/></label>
+              <unifi else="has_error"/>
+                <h3>solicite a senha a um<br/>dos nossos colaboradores</h3>
+              </unifi>
+              <div class="form-group text-center">
+                <input class="form-control input-lg text-center" id="pass"
+                  type="text" placeholder="senha wi-fi" name="password"/>
+                <div class="checkbox text-center">
+                <label><input id="terms" type="checkbox" checked>li e concordo com os
+                  <a href="#" data-toggle="modal" data-target="#tou">termos de uso</a></label>
+              </div>
+              <div class="form-group text-center">
+                <input name="connect" id="btnConnect" class="btn btn-lg"
+                  type="submit" value="conecte-me ao mundo!"/>
+              </div>
+            </form>
+          </div>
+        </section>
+      </unifi>
+    </div>
+    <div id="tou" class="modal fade" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>Termos de Uso</h1>
+          </div>
+          <div class="modal-body">
+            <p>Ao acessar esta rede wi-fi você confirma ser maior de idade e
+              ter entendido todas as considerações aqui dispostas.</p>
+            <p>O serviço de wi-fi é uma cortesia oferecida pela <b>Martin
+              Holandesa</b> e, portanto, pode ser bloqueado, suspendido ou
+              cancelado a qualquer momento sem prévio aviso.</p>
+            <p>Você, como usuário, concorda em <u><b>não</b></u> utilizar o
+              serviço de forma irresponsável ou para fins ilegais, bem como
+              assume total responsabilidade pelos seus atos.</p>
+          </div>
+          <div class="modal-footer">
+            <button id="btnAccept" class="btn btn-lg btn-success">aceito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

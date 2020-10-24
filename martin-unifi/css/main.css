@@ -1,0 +1,245 @@
+
+@font-face {
+  font-family: 'DIN Medium';
+  src: url('../fonts/din_medium-webfont.ttf');
+  src: url('../fonts/din_medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/din_medium-webfont.woff') format('woff'),
+       url('../fonts/din_medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  src: url('../fonts/YanoneKaffeesatz-Regular.ttf') format('ttf');
+}
+
+a, a:active,
+a:visited {
+  color: #06c !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #06c !important;
+  text-decoration: underline;
+}
+
+body {
+  background: #3f200b;
+  color: #3f200b;
+  font-family: 'DIN Medium', 'Yanone Kaffeesatz', 'Ubuntu Condensed', 'Arial Narrow', sans-serif !important;
+}
+
+header {
+  opacity: 0.8;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  -ms-opacity: 0.8;
+  -o-opacity: 0.8;
+  background: #3f200b url('../images/logo.png') center center no-repeat;
+  background-size: auto 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 23% !important;
+  width: 100% !important;
+  z-index: 100;
+}
+
+header h1 {
+  display: none;
+  text-indent: -9999;
+}
+
+#content {
+  display: none;
+  position: absolute;
+  padding: 0 !important;
+  margin: 0 !important;
+  left: 0;
+  bottom: 0;
+  height: 75%;
+  width: 100%;
+}
+
+#welcome {
+  background: #ff9002;
+  padding: 15px;
+  margin: 0;
+}
+
+#welcome h2 {
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 3px 6px #3f200b;
+}
+
+#we-are-open {
+  background: #fff;
+  padding: 30px 20px;
+  margin: 0;
+}
+
+#we-are-open h2 {
+  color: #dd7001;
+  font-size: 2.8em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#fb {
+  color: #ccf;
+  font-weight: bold !important;
+  text-shadow: 0 3px 6px #c60;
+}
+
+.pratos {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.pratos .vegas-wrapper {
+  height: 100%;
+}
+
+.pratos h2,
+.pratos .vegas-wrapper h2 {
+  color: #fff;
+  font-size: 4em;
+  margin: 0;
+  top: 10%;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 5px 20px #3f200b;
+  text-transform: uppercase;
+}
+
+.pratos:nth-child(odd) {
+  background-color: #ff9002;
+}
+
+#pratos-tipicos {
+  background-image: url('../images/pratos/prato-tipico.png');
+}
+
+#pratos-executivos {
+  background-image: url('../images/pratos/prato-executivo.png');
+}
+
+#quarta-country {
+  background-image: url('../images/pratos/quarta-country.png');
+}
+
+#happy-martin {
+  background-image: url('../images/pratos/happy-martin.png');
+}
+
+#cafes-especiais {
+  background-image: url('../images/pratos/cafe-especial.png');
+}
+
+#doces-tipicos {
+  background-image: url('../images/pratos/doce-tipico.png');
+}
+
+#login {
+  background: #ff9002;
+  color: #3f200b;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.login {
+  font-size: 1.5em;
+  margin: auto;
+  height: auto;
+  padding: 0;
+  position: relative;
+  width: 400px;
+}
+
+.login h3 {
+  text-align: center;
+}
+
+.btn {
+  background: #3f200b;
+  border-color: #5f402b;
+  color: #ff9002;
+}
+
+.btn:active,
+.btn:hover {
+  background: #341500;
+  border-color: #5f402b;
+  color: #ff9002;
+}
+
+#pass {
+  margin: 20px 0;
+  font-size: 1.5em;
+  height: 70px !important;
+}
+
+.modal-content {
+  background: #3f200b;
+}
+
+.modal-content > div {
+  border: none;
+}
+
+.modal-header {
+  color: #ff9002;
+}
+
+.modal-body {
+  background: #ff9002;
+  color: #3f200b;
+  font-size: 1.5em;
+}
+
+.modal-footer {
+}
+
+@media screen and (max-width: 800px) {
+  #pass {
+    font-size: 1.5em;
+    height: 55px !important;
+  }
+  #welcome h2 {
+    font-size: 1.5em;
+  }
+  #we-are-open {
+    padding: 15px 20px;
+  }
+  #we-are-open h2 {
+    font-size: 2em;
+  }
+  .pratos h2,
+  .pratos .vegas-wrapper h2 {
+    font-size: 2em;
+  }
+  .login {
+    font-size: 1.2em;
+    width: 90%;
+  }
+  .login h3 {
+    font-size: 1.2em !important;
+  }
+  .modal-body {
+    font-size: 1em;
+  }
+}
