@@ -4,7 +4,7 @@ var app = new Vue({
     age: 'calculando...'
   },
   methods: {
-    calcDate: function(val) {
+    calcDate: function() {
       function calcAge(from) {
         var born = new Date(2018, 5, 10);
         var diff = from.getTime() - born.getTime();
@@ -24,6 +24,6 @@ var app = new Vue({
     }
   },
   beforeMount: function() {
-    // this.calcDate(this.lastMenstruationStr);
+    this.calcDate();
   }
 });
