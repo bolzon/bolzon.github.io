@@ -6,8 +6,8 @@ html *, * {
 }
 
 body {
-  background: #000 url('bg.jpg') center center no-repeat;
-  background-size: contain;
+  background: #000;
+  background-size: cover;
 }
 
 #app {
@@ -17,6 +17,7 @@ body {
 
 #app .panel {
   background: #222;
+  border: solid 2px #333;
   border-radius: 15px;
   display: block;
   top: 50%;
@@ -24,14 +25,13 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 50px 0;
-  width: 1000px;
+  padding: 30px 0;
+  width: 300px;
 }
 
 .age {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   color: #fff;
-  line-height: 1.5;
   white-space: pre;
 }
