@@ -1,3 +1,12 @@
+blockquote {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+footer * {
+    font-size: 0.8em;
+}
+
 nav {
     background: #eee;
     padding: 10px 50px;
@@ -33,13 +42,17 @@ nav {
 
 @media screen and (min-width: 600px) {
     .grid > div {
-        padding: 0 30px;
+        padding-right: 30px;
+    }
+
+    .grid > div:last-child {
+        padding-right: 0px;
     }
 }
 
 @media screen and (max-width: 600px) {
     nav {
-        padding: 5px 20px;
+        padding: 0;
     }
 
     .title {
@@ -56,8 +69,6 @@ nav {
     }
 
     blockquote {
-        font-size: 0.8em;
-        font-style: italic;
         padding: 0 10px;
     }
 }
