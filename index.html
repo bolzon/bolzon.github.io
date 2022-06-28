@@ -1,177 +1,80 @@
-<html lang='en'>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
-  <title>abolzon</title>
-  <meta charset="utf-8"/>
-  <title>PIPO</title>
-  <link rel="icon" type="image/x-icon" href="images/a.ico" />
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Mochiy+Pop+P+One&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-
-html *, * {
-  font-family: 'Architects Daughter', serif;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background: #000;
-  color: #000;
-  font-size: 1.7em;
-}
-
-.panel {
-  background: #fff;
-  border: outset 0px #08c;
-  border-radius: 30px;
-  height: max-content;
-  width: 1200px;
-  display: block;
-  top: 50%;
-  left: 50%;
-  padding: 50px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-h1 {
-  /* border-style: solid;
-  border-width: 0 0 3px 0;
-  border-color: #000; */
-  color: #000;
-  font-size: 1.5em;
-  /* background: #aaa; */
-}
-
-h2 {
-  color: #777;
-  font-size: 2em;
-  padding: 20px 0 0px 0;
-}
-
-p {
-  margin: 10px 0;
-}
-
-ul.social-media {
-  display: block;
-  height: 50px;
-  margin: 40px 0;
-}
-
-ul.social-media li {
-  display: block;
-  float: left;
-  margin-right: 10px;
-  height: 50px;
-  width: 50px;
-}
-
-a.social-media {
-  /* background: #ccc; */
-  /* border: solid 1px #000; */
-  /* clear: both; */
-  display: block;
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  text-indent: -9999999px;
-}
-
-.social-media.github {
-  background: url('images/github.svg');
-}
-
-.social-media.fb {
-  background: url('images/fb.svg');
-}
-
-.social-media.linkedin {
-  background: url('images/linkedin.svg');
-}
-
-.social-media.ig {
-  background: url('images/ig.svg');
-}
-
-.social-media.telegram {
-  background: url('images/telegram.svg');
-}
-
-img.me {
-  float: right;
-  height: 300px;
-  width: 300px;
-  margin-left: 40px;
-  border-radius: 20px;
-}
-
-@media (max-width: 1300px) {
-  .panel {
-    width: 80%;
-  }
-}
-
-@media (max-width: 850px) {
-  body {
-    background: #fff;
-  }
-  .panel {
-    padding: 0;
-    width: 90%;
-    margin: 50px 0;
-  }
-  h1 {
-    width: 400px;
-  }
-  html *, * {
-    text-align: center;
-    width: 100%;
-  }
-  ul.social-media {
-    clear: both;
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 290px;
-  }
-  ul.social-media li:last-child {
-    margin: 0;
-  }
-  img.me {
-    float: none;
-    clear: both;
-    margin: 100px 0 40px 0;
-    width: 400px;
-    height: 400px;
-  }
-}
-
-</style>
+  <title>Alexandre Bolzon</title>
+  <link rel="icon" type="image/x-icon" href="images/ab.ico"/>
+  <link type="text/css" rel="stylesheet" href="css/pico.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/ab.css" media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-  <div class="panel">
-    <img class="me" src="images/me.jpg"/>
-    <h1>Alexandre Bolzon</h1>
-    <p>
-      You can reach me out on one of my social medias:
-    </p>
-    <p>
-      <ul class="social-media">
-        <li><a class="social-media github"  href="https://github.com/bolzon" target="_blank">Github</a></li>
-        <li><a class="social-media linkedin"  href="https://linkedin.com/in/alexandrebolzon/" target="_blank">Linkedin</a></li>
-        <li><a class="social-media ig" href="https://instagram.com/blzn" target="_blank">Instagram</a></li>
-        <li><a class="social-media telegram" href="https://t.me/abolzon" target="_blank">Telegram</a></li>
-        <li><a class="social-media fb" href="https://facebook.com/alexandrebolzon/" target="_blank">Facebook</a></li>
-      </ul>
-    </p>
-    <p>
-      Or <a target="_blank" href="https://www.paypal.com/donate?business=CNEACUSEVU9AU&no_recurring=0&currency_code=EUR">buy me a coffee</a> :)
-    </p>
-  </div>
+  <nav class="container-fluid">
+    <ul>
+      <li><a href="#" class="title">Alexandre Bolzon</a></li>
+    </ul>
+    <ul class="social">
+      <li><a target="_blank" href="https://github.com/bolzon"><img src="images/github.svg"/></a></li>
+      <li><a target="_blank" href="https://linkedin.com/in/alexandrebolzon"><img src="images/linkedin.svg"/></a></li>
+      <li><a target="_blank" href="https://medium.com/@bolzon"><img src="images/medium.svg"/></a></li>
+      <li><a target="_blank" href="https://instagram.com/blzn"><img src="images/ig.svg"/></a></li>
+    </ul>
+  </nav>
+  <div class="container-fluid home-img" data-tooltip="Zaandam"></div>
+  <main>
+    <div class="container-fluid">
+      <div class="grid">
+        <div>
+          <h4>Software</h4>
+          <p>
+            Around 2002 I discovered the PLCs (Programmable Logic Controllers)
+            and from that point onwards I was certain about the big potential
+            Software had, so I've been working in the software industry since then.
+          </p>
+          <blockquote>
+            "Software is becoming increasingly important in our lives.
+            Just cast your glance everywhere where software is available
+            and you will conclude that software indeed runs (make the rules)
+            the world."
+            <footer>
+              <cite>&#0151; Ger Cloud</cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div>
+          <h4>Music</h4>
+          <p>My life was never the same after I've watched the movie
+            <a href="https://www.imdb.com/title/tt0086879/" target="_blank" data-tooltip="Movie about Mozart's life">Amadeus</a>.
+            The phrase <i>"'earth' without 'art' is just 'eh'"</i> couldn't be so true!
+            I jumped right into piano classes and got so in love with it that I can no longer stop.
+          </p>
+          <blockquote>
+            "Music is not sound. Music is using sound to organize emotions in time."
+            <footer>
+              <cite>&#0151; Krystian Zimerman</cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div>
+          <h4>Photography</h4>
+          <p>
+            My second favorite hobby is photography, which I discovered when I was really young,
+            but could develop my skills on it only many years later, when I was finally able
+            to afford my first small photo gear myself.
+          </p>
+          <blockquote>
+            "You don't take a photograph. You make it."
+            <footer>
+              <cite>&#0151; Ansel Adams</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <p>Contents &copy; Alexandre Bolzon</p>
+    </div>
+  </footer>
 </body>
 </html>
