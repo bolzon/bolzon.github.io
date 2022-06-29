@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <title>Alexandre Bolzon</title>
+  <link rel="icon" type="image/x-icon" href="images/ab.ico"/>
+  <link type="text/css" rel="stylesheet" href="css/pico.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/ab.css" media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <nav class="container-fluid" data-theme="light">
+    <ul>
+      <li><a href="#" class="title">Alexandre Bolzon</a></li>
+    </ul>
+    <ul class="social">
+      <li><a target="_blank" href="https://github.com/bolzon"><img src="images/github.svg"/></a></li>
+      <li><a target="_blank" href="https://linkedin.com/in/alexandrebolzon"><img src="images/linkedin.svg"/></a></li>
+      <li><a target="_blank" href="https://medium.com/@bolzon"><img src="images/medium.svg"/></a></li>
+      <li><a target="_blank" href="https://instagram.com/blzn"><img src="images/ig.svg"/></a></li>
+    </ul>
+  </nav>
+  <div class="container-fluid home-img" data-tooltip="Zaandam"></div>
+  <main>
+    <div class="container-fluid">
+      <div class="grid">
+        <div>
+          <h4>Software</h4>
+          <p>
+            Around 2002 I discovered the PLCs (Programmable Logic Controllers)
+            and from that point onwards I was certain about the big potential
+            Software had, so I've been working in the software industry since then.
+          </p>
+          <blockquote>
+            "Software is becoming increasingly important in our lives.
+            Just cast your glance everywhere where software is available
+            and you will conclude that software indeed runs (make the rules)
+            the world."
+            <footer>
+              <cite>&#0151; Ger Cloud</cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div>
+          <h4>Music</h4>
+          <p>My life was never the same after I've watched the movie
+            <a href="https://www.imdb.com/title/tt0086879/" target="_blank" data-tooltip="Movie about Mozart's life">Amadeus</a>.
+            The phrase <i>"'earth' without 'art' is just 'eh'"</i> couldn't be so true!
+            I jumped right into piano classes and got so in love with it that I can no longer stop.
+          </p>
+          <blockquote>
+            "Music is not sound. Music is using sound to organize emotions in time."
+            <footer>
+              <cite>&#0151; Krystian Zimerman</cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div>
+          <h4>Photography</h4>
+          <p>
+            My second favorite hobby is photography, which I discovered when I was really young,
+            but could develop my skills on it only many years later, when I was finally able
+            to afford my first small photo gear myself.
+          </p>
+          <blockquote>
+            "You don't take a photograph. You make it."
+            <footer>
+              <cite>&#0151; Ansel Adams</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <p>Image and contents &copy; Alexandre Bolzon</p>
+    </div>
+  </footer>
+</body>
+</html>

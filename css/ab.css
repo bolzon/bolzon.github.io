@@ -1,3 +1,33 @@
+:root {
+    --font-size: 1em;
+}
+
+a {
+    text-decoration: underline solid;
+}
+
+html, html * {
+    font-family: 'Monaco', monospace !important;
+}
+
+footer p {
+    font-size: 0.8em;
+    text-transform: lowercase;
+}
+
+footer div.grid div:nth-child(2) {
+    text-align: center;
+}
+
+footer div.grid div:last-child {
+    text-align: right;
+}
+
+li ul li {
+    list-style: none;
+}
+
+/*
 blockquote {
     font-size: 0.8em;
     font-style: italic;
@@ -8,7 +38,6 @@ footer * {
 }
 
 nav {
-    background: #eee;
     padding: 10px 50px;
 }
 
@@ -71,4 +100,4 @@ nav {
     blockquote {
         padding: 0 10px;
     }
-}
+} */
