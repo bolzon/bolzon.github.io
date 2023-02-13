@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="utf-8" />
+  <title>KPW &#151; Briefing</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="https://kpworld.pt/wp-content/uploads/2022/09/cropped-FAVICON_-32x32.png" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+  <script src="code.js"></script>
+</head>
+
+<body>
+  <div class="body">
+    <header>
+      <h1>KPW &#151; Briefing</h1>
+    </header>
+    <h2>Dados Gerais</h2>
+    <fieldset>
+      <label for="name">Cliente:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" name="telefone">
+    </fieldset>
+
+    <h2>Tipo de Solicitação</h2>
+    <fieldset>
+      <input type="checkbox" id="maquete" name="maquete">
+      <label for="maquete">Maquete</label>
+      <input id="maquete-prazo" type="date" class="prazo">
+      <br>
+      <input type="checkbox" id="orcamento" name="orcamento">
+      <label for="orcamento">Orçamento</label>
+      <input id="orcamento-prazo" type="date" class="prazo">
+      <br>
+      <input type="checkbox" id="produzir" name="produzir">
+      <label for="produzir">Produção</label>
+      <input id="produzir-prazo" type="date" class="prazo">
+      <br>
+      <input type="checkbox" id="levantar" name="levantar">
+      <label id="levantar-label" for="levantar">Inserir medidas</label>
+      <div id="medidas">
+        <label>Medidas:</label>
+        <textarea id="locallevmed" name="locallevmed" placeholder="Levantar medidas neste espaço" rows="4"></textarea>
+        <div id="locallevmed-text"></div>
+      </div>
+    </fieldset>
+
+    <h2>Produtos / Serviços</h2>
+    <button id="add-product">Adicionar</button>
+    <fieldset id="template-product" class="product">
+      <legend>Item #1</legend>
+      <label class="category">Categoria:</label>
+      <select class="category"><select>
+      <label class="subcategory">Subcategoria:</label>
+      <select class="subcategory"></select>
+      <br>
+      <label>Medidas:</label>
+      <textarea class="product-measures" placeholder="Levantar medidas neste espaço" rows="4"></textarea>
+      <div class="product-measures"></div>
+      <br>
+      <label>Acabamentos:</label>
+      <textarea class="product-finishing" placeholder="Descrever acabamentos" rows="4"></textarea>
+      <div class="product-finishing"></div>
+      <br>
+      <label>Imagens:</label>
+      <input type="file">
+      <br>
+      <button class="remove-product">Remover</button>
+    </fieldset>
+    <div id="products"></div>
+
+    <h2>Considerações Gerais</h2>
+    <fieldset>
+      <textarea id="considerar" name="considerar" placeholder="Entre aqui as considerações finais"></textarea>
+      <div id="considerar-text"></div>
+    </fieldset>
+
+    <label>Respondente:</label>
+    <input type="text" id="nomeDoRespondente" required>
+    <br>
+    <button id="print" onclick="window.print()">Imprimir</button>
+  </div>
+</body>
+
+</html>

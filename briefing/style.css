@@ -1,0 +1,220 @@
+html,
+html * {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+}
+
+button {
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 8px 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  background: #fff no-repeat center center;
+  background-image: url('logo.jpg');
+  background-size: auto 80px;
+  height: 80px;
+}
+
+legend {
+  font-weight: bold;
+  font-style: italic;
+}
+
+input[type=date] {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+#prazos input[type=date]:last-child {
+  margin: 0;
+}
+
+header>h1 {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 70px;
+  width: 100%;
+}
+
+#medidas {
+  display: none;
+  margin-top: 10px;
+}
+
+.prazo {
+  display: none;
+}
+
+#orcamento,
+#produzir {
+  margin-top: 10px;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
+label.subcategory {
+  margin-left: 20px;
+}
+
+#levantar {
+  margin-top: 10px;
+}
+
+#template-product {
+  display: none;
+}
+
+div.product-measures,
+div.product-finishing,
+#locallevmed-text {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+div.product-measures,
+div.product-finishing,
+#locallevmed-text,
+#considerar-text {
+  display: none;
+  white-space: pre;
+}
+
+#add-product {
+  margin-bottom: 20px;
+}
+
+.remove-product {
+  margin-top: 20px;
+}
+
+#print {
+  margin-top: 20px;
+}
+
+#prazos>label {
+  display: inline-block;
+  width: 110px;
+}
+
+.body {
+  background: #fff;
+  width: 80%;
+  padding: 30px;
+  margin: 0 auto;
+  min-width: 800px;
+}
+
+@media print {
+  body {
+    font-size: 10pt;
+    margin: 10mm;
+  }
+
+  .body {
+    padding: 0;
+    width: 100%;
+    min-width: 0;
+  }
+
+  header {
+    background-position: right;
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  header>h1 {
+    display: block;
+  }
+
+  fieldset {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  input, select {
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
+  button,
+  input[type=button],
+  input[type=file] {
+    display: none;
+  }
+
+  #prazos>label {
+    display: inline-block;
+    width: 90px;
+  }
+
+  textarea,
+  #levantar,
+  #levantar-label {
+    display: none;
+  }
+
+  div.product-measures,
+  div.product-finishing,
+  #locallevmed-text,
+  #considerar-text {
+    font-family: monospace;
+    font-weight: bold;
+    display: block;
+    white-space: break-spaces;
+    word-wrap: break-word;
+    max-width: 190mm;
+  }
+
+  #name {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  #email {
+    break-before: always;
+  }
+}
