@@ -1,0 +1,250 @@
+html,
+html * {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 5px;
+}
+
+body {
+  background: rgb(228, 228, 228);
+  margin: auto;
+}
+
+button {
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 8px 20px;
+}
+
+img {
+    display: none;
+    width: auto;
+    border: thin solid 0px;
+    padding: 2px;
+    margin: 10px 10px 10px 10px;
+    -webkit-box-shadow: 5px 5px 37px 17px #000000; 
+    box-shadow: 0px 0px 20px 10px #c7c7c7;
+  }
+
+button:hover {
+  cursor: pointer;
+}
+
+legend {
+  font-weight: bold;
+  font-style: italic;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+#prazos input[type=date]:last-child {
+  margin: 0;
+}
+
+header>h1 {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  background-color: rgb(226, 226, 226);
+  color: rgb(0, 0, 0);
+  text-align-last: center;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 0px 0px 0px 0px;  
+}
+
+fieldset {
+  margin: 0 auto;
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 0px;
+  border-collapse: collapse;
+  width: auto;
+  margin: auto;
+}
+
+textarea {
+  height: 20px;
+  width: 99%;
+}
+
+#medidas {
+  display: none;
+  margin-top: 10px;
+}
+
+.prazo {
+  display: none;
+}
+
+#orcamento,
+#produzir {
+  margin-top: 10px;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
+label.subcategory {
+  margin-left: 20px;
+}
+
+#levantar {
+  margin-top: 10px;
+}
+
+#template-product {
+  display: none;
+}
+
+div.product-measures,
+div.product-finishing,
+#locallevmed-text {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+div.product-measures,
+div.product-finishing,
+#locallevmed-text,
+#morada-text,
+#titulo-text,
+#prodserv-text,
+#medidas-mm-text,
+#considerar-text {
+  display: none;
+  white-space: pre;
+}
+
+#add-product {
+  margin-bottom: 20px;
+}
+
+.remove-product {
+  margin-top: 20px;
+}
+
+#print {
+  margin-top: 10px;
+}
+
+#prazos>label {
+  display: inline-block;
+  width: 110px;
+}
+
+.body {
+  background: #fff;
+  width: 80%;
+  padding: 30px;
+  margin: 0 auto;
+  min-width: 800px;
+}
+
+
+@media print {
+  body {
+    font-size: 10pt;
+    margin: 0mm;
+  }
+
+  .body {
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    min-width: 50%;
+  }
+
+  fieldset {
+    margin: 0 auto;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 0px;
+    border-collapse: collapse;
+    width: auto;
+    margin: auto;
+  }
+
+  select {
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    size: auto;
+  }
+
+  input {
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    size: auto;
+    max-width: 100%;
+  }
+
+  input[type=date] {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  textarea {
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    word-wrap: break-word;
+    height: auto;
+    min-height: 20px;
+    box-sizing: border-box;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
+  div {
+    border: solid 1px rgb(129, 129, 129);
+    padding: 0px 0px 0px 0px;  
+  }
+
+  button,
+  input[type=button],
+  input[type=file] {
+    display: none;
+  }
+
+  #prazos>label {
+    display: inline-block;
+    width: 90px;
+  }
+  
+  img {
+    display: none;
+  }
+
+  div.product-measures,
+  div.product-finishing, {
+    font-family: monospace;
+    font-weight: bold;
+    border: solid 0px rgb(0, 0, 0);
+    display: block;
+    white-space: break-spaces;
+    word-wrap: break-word;
+    max-width: 170mm;
+  }
+}

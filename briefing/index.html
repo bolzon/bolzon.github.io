@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="utf-8" />
+  <title>KPW &#151; Briefing</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="https://kpworld.pt/wp-content/uploads/2022/09/cropped-FAVICON_-32x32.png" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+  <script src="code.js"></script>
+</head>
+
+<body onload="promptName()">
+  <header>
+    <h1>KPW &#151; Briefing</h1>
+  </header>
+  <form onsubmit="return validateForm()">
+
+  <fieldset>
+    <legend>KPW - Briefing: </legend>
+    <img src="logo.jpg" alt="KP World" id="logo" width="50" height="50"> Solicitado por: <input type="text" id="nameField" name="nameField" required>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Dados do Cliente: </legend>
+    <label for="name">Novo: <input type="checkbox" id="novo"></input> Nome: <input type="text" id="name" name="name" required></label><br>
+    <label for="email">Email: <input type="email" id="email" name="email" required  size="auto" style="max-width: 100%;" /></label>
+    <label for="telefone">Telefone: <input type="text" id="telefone" name="telefone" size="auto" style="max-width: 100%;" /></label><br>
+    <label for="morada">Morada: <textarea type="text" id="morada" name="morada" placeholder="Descreva aqui a morada do cliente."></textarea><br><div id="morada-text"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Tipo de solicitação / Previsões de Entrega: </legend>
+    <input type="checkbox" id="maquete" name="maquete">
+     <label for="maquete">Maquete</label>
+     <input id="maquete-prazo" type="date" class="prazo">
+     <br>
+     <input type="checkbox" id="orcamento" name="orcamento">
+     <label for="orcamento">Orçamento</label>
+     <input id="orcamento-prazo" type="date" class="prazo">
+     <br>
+     <input type="checkbox" id="produzir" name="produzir">
+     <label for="produzir">Esta Obra possui Prazo de Entrega Final </label>
+     <input id="produzir-prazo" type="date" class="prazo">
+     <br>
+     <input type="checkbox" id="levantar" name="levantar">
+     <label for="levantar">Preparar Produção</label>
+     <br>
+     <div id="medidas">Levantar medidas antes da produção? 
+
+      <select id="levmed">
+        <option value="">Não </option>
+        <option value="Sim">Sim </option>
+      </select><br>
+      <textarea type="text" id="locallevmed" name="locallevmed" disabled required placeholder="Descreva aqui a localidade e dados do responsável."></textarea>
+      <div id="locallevmed-text"></div>
+
+      <script>
+        // Script para desabilitar campo Localidade -->
+        const select = document.getElementById("levmed");
+          const input = document.getElementById("locallevmed");
+        
+          select.addEventListener("change", function() {
+            if (this.value === "Sim") {
+              input.disabled = false;
+            } else {
+              input.disabled = true;
+            }
+          });
+      </script>
+     </div>
+
+     <div id="produtos" class="produto"></div>
+     <button type="button" onclick="adicionarProduto()" value="enviar"> Adicionar Produto / Serviço </button><br>
+  
+  </fieldset>
+  
+  <fieldset>
+    <label>Considerações Gerais: </label><br>
+    <textarea id="considerar" name="considerar" placeholder="Descreva aqui informações gerais que considerar relevantes."></textarea><div id="considerar-text"></div>
+  </fieldset>
+
+  <br><button type="submit" value="Imprimir">Imprimir </button>
+</form>
+</body>
+</html>
